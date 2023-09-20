@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./ContactMe.css">
+        <link rel="stylesheet" href="./css/all.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="TheCarlo">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Problem set 8 HomePage">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <main>
+            <div class="title">
+                <h2>
+                Submit your comments and suggestions for improvement
+                </h2>
+                <div class="media-box">
+                    <span class="mail-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        Address:
+                        <a href="mailto:4hmzjob@gmail.com">4hmzjob@gmail.com</a>
+                    </span>
+                    <span class="insta-box">
+                        <i class="fa-brands fa-instagram"></i>
+                        <a target="_blank" href="https://instagram.com/_thecarlo?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
+                            Instagram
+                        </a>
+                    </span>
+                </div>
+
+            </div>
+            <h3>
+                You can ask me any question you have or send me a ticket
+            </h3>
+            <form class="form">
+
+                <div class="subject">
+                    <label for="ticket-subject">Subject: </label>
+                    <input type="text" name="ticket-subject" id="ticket-subject" class="write" onkeyup="writing(this)">
+                </div>
+
+                <div class="name">
+                    <label for="ticket-name">First Name: </label>
+                    <input type="text" name="ticket-name" id="ticket-name" class="write" onkeyup="writing(this)">
+                    <br>
+                    <label for="ticket-family">Last Name: </label>
+                    <input type="text" name="ticket-family" id="ticket-family" class="write" onkeyup="writing(this)">
+                </div>
+
+                <div class="gender">
+                    Gender:
+                    <label class="gen-lable" for="male-gender">Male</label>
+                    <input type="radio" name="gender" id="male-gender" value="male" class="write" onkeyup="writing(this)">
+                    <label class="gen-lable" for="female-gender">Female</label>
+                    <input type="radio" name="gender" id="female-gender" value="female" class="write" onkeyup="writing(this)">
+                </div>
+
+                <div class="description">
+                    <label for="form-description">Description</label>
+                    <br>
+                    <textarea name="Description" id="form-description" cols="30" rows="10" class="write" onkeyup="writing(this)"></textarea>
+                </div>
+
+                <div class="btn">
+                    <button type="reset" class="del">Delete</button>
+                    <button type="Submit" class="sub">Send</button>
+                </div>
+
+            </form>
+
+        </main>
+
+        <script src="../JavaScript/javascript.js"></script>
+    </body>
+</html>
